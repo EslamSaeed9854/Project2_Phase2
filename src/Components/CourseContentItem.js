@@ -2,9 +2,9 @@ import React from "react";
 
 function CourseContentItem(props) {
   let mhref = "#collapseExample";
-  mhref+=props.id;
+  mhref += props.id;
   let mid = "collapseExample";
-  mid+= props.id;
+  mid += props.id;
   return (
     <div>
       <p class="mb-0 w-100">
@@ -15,17 +15,21 @@ function CourseContentItem(props) {
           role="button"
           aria-expanded="false"
           aria-controls="collapseExample"
-          style={{backgroundColor : 'rgb(209, 215, 220)'}}
+          style={{ height: "50px", backgroundColor: "rgb(209, 215, 220)" }}
         >
-        <i class="fas fa-chevron-down"></i>
-        {props.name}
+          {props.name}
         </a>
       </p>
       <div class="collapse" id={mid}>
         <div class="card card-body">
-        {props.list.map((cur_item)=>{
-          return <div>{cur_item}</div>
-        })}
+          {props.list.map((cur_item) => {
+            return (
+              <div>
+                <i style={{fontSize:"18px"}} class="fa">&#xf144;</i>
+                <span> {cur_item}</span>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
