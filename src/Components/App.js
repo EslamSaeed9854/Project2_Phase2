@@ -4,7 +4,7 @@ import OverView from "./OverView";
 
 function App() {
   return(
-<div class="container" style={{width:'800px'}}>
+<div class="container mt-5" style={{width:'800px'}}>
     <OverView/>
     <CourseContent/>
   </div>
