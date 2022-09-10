@@ -8,7 +8,7 @@ function Courses(props) {
     <div >
       <Text/>
       <Button/>
-      <div class="Mat">
+      <div class="Mat justify-content-between">
       <CourseItem data={props.data} ID={i++} />
       <CourseItem data={props.data} ID={i++} />
       <CourseItem data={props.data} ID={i++} />
