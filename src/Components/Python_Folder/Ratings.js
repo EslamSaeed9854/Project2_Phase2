@@ -1,7 +1,29 @@
 import React from "react";
 import Rate_Item from '../Python_Folder/Rate_Item'
-import data from "../all_Data/rate_Item_data";
+import {useState,useEffect} from 'react';
 function Ratings() {
+  const [data,setData]=useState([]);
+  const getData=()=>{
+    fetch('https://api.npoint.io/bcf5a1773ffabab319e4'
+    ,{
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+    }
+    )
+      .then(function(response){
+        console.log(response)
+        return response.json();
+      })
+      .then(function(myJson) {
+        console.log(myJson);
+        setData(myJson)
+      });
+  }
+  useEffect(()=>{
+    getData()
+  },[])
   return (
     <div>
       <th class="col-7" style={{ fontSize: "24px" }}>
