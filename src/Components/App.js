@@ -6,8 +6,8 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/home/python" element={<PythonCourse/>}></Route>
-        <Route path="/home" element={<Home/>}></Route>
+        <Route path="/Home/Python" element={<PythonCourse/>}></Route>
+        <Route path="/Home" element={<Home/>}></Route>
       </Routes>
     </div>
   );

@@ -1,4 +1,55 @@
-
-.bodey{
-  color: blueviolet;
+.Mat{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 20%;
+  border: 1px solid rgb(214, 214, 214);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px;
+  border-color: black;
+  padding-right: 2px;
+  padding-top: 2px;
+}
+.cent{
+  padding-left: 18px;
+}
+.tit{
+  padding-left: 18px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: roboto Arial, Helvetica, sans-serif;
+  max-width: 220px;
+}
+.ph{
+  width: 250px;
+  padding-left: 15px;
+}
+.pht{
+  padding-left: 15px;
+}
+.titleT{
+  padding-left: 18px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: roboto Arial, Helvetica, sans-serif;
+}
+.checked {
+  color: orange;
+}
+.expore-pyth{
+  border-style: groove;
+  border-color: black;
+  background-color: white;
+  margin: 2em;
+  padding: 0.5em;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.expore-pyth:hover {
+  cursor: pointer;
+  background-color: rgb(205, 199, 199);
+}
+.ph:hover{
+  cursor: pointer;
 }

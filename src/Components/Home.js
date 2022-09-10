@@ -1,20 +1,9 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-function Home() {
-    let route = useNavigate();
-  return (
-    <div>
-     <button
-        type="button"
-        onClick={() => {
-          route("/home/python");
-        }}
-        class="btn btn-primary"
-      >
-        Python_course
-      </button>
-    </div>
+import Courses from "./Courses";
+import data_python from './python_res.js'
+function App() {
+  return(
+      <Courses data = {data_python}/>
   );
 }
 
-export default Home;
+export default App;
