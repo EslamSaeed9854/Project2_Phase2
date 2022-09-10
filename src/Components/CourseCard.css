@@ -1,0 +1,43 @@
+.courseCard {
+    position: sticky;
+    background-color: white;
+    top: 100px;
+    right: 1em;
+    z-index: 10;
+    width: 350px;
+    padding: 2px;
+    border: solid;
+  }
+  
+  .courseCardImg {
+    width: 100%;
+  }
+  
+  .courseCardBody {
+    margin: 10px;
+  }
+  
+  .courseCard button {
+    display: block;
+    width: 100%;
+    margin: 5px;
+    height: 40px;
+  }
+  
+  .courseCard .addCartBtn {
+    background-color: blue;
+    color: white;
+  }
+  
+  .courseCard svg {
+    margin-right: 10px;
+  }
+  
+  .courseCard span {
+    border-bottom: solid;
+    font-weight: bold;
+  }
+  
+  .courseCardFooter {
+    margin: 10px;
+  }

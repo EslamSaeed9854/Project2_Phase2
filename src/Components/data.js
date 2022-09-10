@@ -8,46 +8,47 @@ let data = [
   {
     id : "2",
     CourseName: "The Basics (Data Types)",
-    CourseInside: ["Variables", "Multiple Assignment"],
+    CourseInside: ["Variables", "Multiple Assignment" ,"Data Types and Ints","Strings"
+    ,"Placeholders", "Lists/Arrays"],
   },
   {
     id : "3",
-    CourseName: "Up and Running With Python",
-    CourseInside: ["Installing Python", "Hello World"],
+    CourseName: "Conditions and Loops",
+    CourseInside: ["If-Else Statements", "Relational Operators","Nested If/Else" , "Elif Statements"],
   },
   {
     id : "4",
-    CourseName: "Up and Running With Python",
-    CourseInside: ["Installing Python", "Hello World"],
+    CourseName: "Functions!",
+    CourseInside: ["Creating our own Functions", "Global and Local Vars" ,  "Abs and Bool" , "Help and Dir" , "Eval and Exec"],
   },
   {
     id : "5",
-    CourseName: "Up and Running With Python",
-    CourseInside: ["Installing Python", "Hello World"],
+    CourseName: "Classes! (Object Orientated Programming)",
+    CourseInside: ["Basics of Classes", "Functions in Classes" , "Class Attributes" , "Inheritance"],
   },
   {
     id : "6",
-    CourseName: "Up and Running With Python",
-    CourseInside: ["Installing Python", "Hello World"],
+    CourseName: "File Input/Output",
+    CourseInside: ["Creating a File", "Reading a File" , "Writing to a File"],
   },
   {
     id : "7",
-    CourseName: "Up and Running With Python",
+    CourseName: "Using Python Modules",
     CourseInside: ["Installing Python", "Hello World"],
   },
   {
     id : "8",
-    CourseName: "Up and Running With Python",
+    CourseName: "Crawling The Web",
     CourseInside: ["Installing Python", "Hello World"],
   },
   {
     id : "9",
-    CourseName: "Up and Running With Python",
+    CourseName: "Beautiful Soup HTML Parsing",
     CourseInside: ["Installing Python", "Hello World"],
   },
   {
     id : "10",
-    CourseName: "Up and Running With Python",
+    CourseName: "Python GUI with Tkinter",
     CourseInside: [ "Hello World"],
   },
 ];
