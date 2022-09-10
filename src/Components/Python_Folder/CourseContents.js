@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowsExpand } from "react-bootstrap-icons";
-import CourseContentItem from "./CourseContentItem";
-import data from "./data";
+import CourseContentItem from "../Python_Folder/CourseContentItem";
+import data from "../all_Data/data";
 
 function CourseContent() {
   let expnd = "Expand all sections";

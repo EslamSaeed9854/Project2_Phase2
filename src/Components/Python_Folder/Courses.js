@@ -1,7 +1,7 @@
 import CourseItem from "./CourseItem";
 import "../style.css";
-import Text from "./Text";
-import Button from "./Button";
+import Text from "../Home/Text";
+import Button from "../Home/Button";
 function Courses(props) {
   let i = 0;
   return (

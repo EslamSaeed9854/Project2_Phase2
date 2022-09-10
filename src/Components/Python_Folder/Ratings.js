@@ -1,6 +1,6 @@
 import React from "react";
-import Rate_Item from './Rate_Item'
-import data from "./rate_Item_data";
+import Rate_Item from '../Python_Folder/Rate_Item'
+import data from "../all_Data/rate_Item_data";
 function Ratings() {
   return (
     <div>

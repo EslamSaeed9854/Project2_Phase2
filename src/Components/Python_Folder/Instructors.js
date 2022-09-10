@@ -1,6 +1,6 @@
 import React from "react";
-import Person from "./Person";
-import Instructor_data from "./instructorsData";
+import Person from "../Python_Folder/Person";
+import Instructor_data from "../all_Data/instructorsData";
 function Instructors() {
   return (
     <div>

@@ -1,8 +1,8 @@
 import React from "react";
-import Home from "./Home";
+import Home from "./Home/Home";
 import { Route, Routes } from "react-router-dom";
-import PythonCourse from "./PythonCourse";
-import Navbar from './Navbar';
+import PythonCourse from "./Python_Folder/PythonCourse";
+import Navbar from './Home/Navbar';
 function App() {
   return (
     <div>
