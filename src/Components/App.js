@@ -25,7 +25,7 @@ function App() {
         </div>
 
         <div class="col-5">
-          <CourseCard courseCardData={{}} />
+          <CourseCard image ="https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg" />
         </div>
       </div>
     </div>

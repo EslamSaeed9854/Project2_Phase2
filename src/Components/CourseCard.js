@@ -9,7 +9,7 @@ import {
   from "react-bootstrap-icons";
   import "./CourseCard.css";
   
-  function CourseCard({ courseCardData }) {
+  function CourseCard(courseCardData ) {
     return (
       <div className="courseCard">
         <img src={courseCardData.image} alt="course" className="courseCardImg" />

@@ -5,9 +5,9 @@ function CourseDescription({ courseData }) {
   return (
     <div className="courseHeader">
       <div>
-        {courseData.path1 + " > " + courseData.path2 + " > " + courseData.path3}
+        { "Development" + " > " + "Programming Languages" + " > " + "Python"}
       </div>
-      <h4>{courseData.title}</h4>
+      <h2>Learn Python: The Complete Python Programming Course</h2>
       <p>{courseData.headline}</p>
       <div className="otherData">
         <div>{courseData.rating}</div>
