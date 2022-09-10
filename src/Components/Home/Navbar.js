@@ -7,7 +7,7 @@ function Navbar() {
     <nav class="navbar navbar-expand-lg border  bg-white justify-content-between">
       <a class="navbar-brand" href="#">
         <img
-          src="./images/logo-udemy.svg"
+          src="../images/logo-udemy.svg"
           alt="Logo"
           width="100"
           height="24"
