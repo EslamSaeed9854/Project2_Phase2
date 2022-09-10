@@ -17,9 +17,9 @@ function CourseContent() {
         <div class="col-1"></div>
         <div class="col-4" style={{ textIndent: "20%"}}>
           <button class ="fw-bold bg-white" style={{border :"0px",  fontSize: "20px", color: "blueviolet"  }}
-           onClick={ ()=>{data.map((cur_course)=>{
-            return  <CourseContentItem id = {cur_course.id} name ={cur_course.CourseName} list = {cur_course.CourseInside}/>
-          })}}
+           onClick={ ()=>{
+           
+          }}
            >
             {" "}
             Expand all sections
