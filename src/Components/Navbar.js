@@ -21,9 +21,9 @@ function Navbar() {
         <input
           type="search"
           id="form1"
-          style={{ width: "500px" }}
+          style={{ width: "500px",textIndent: "5%"}}
           class="form-control rounded-4"
-          placeholder="&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Search for any thing"
+          placeholder="Search for any thing"
           aria-label="Search"
         />
         <img
