@@ -1,50 +1,60 @@
 import React from "react";
-
-
+import { useNavigate } from "react-router-dom";
+import '../style.css'
 function Navbar() {
+    let route = useNavigate();
   return (
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg border  bg-white justify-content-between">
+      <a class="navbar-brand" href="#">
+        <img
+          src="./images/logo-udemy.svg"
+          alt="Logo"
+          width="100"
+          height="24"
+          class="d-inline-block align-text-top"
+          onClick={ ()=>{ route("/Home");}}
+        />
+      </a>
+      <span>Categories</span>
 
-    <a class="navbar-brand" href="#">
-      <img src=".../images/logo-udemy.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"/>
-      Bootstrap
-    </a>
-
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+      <div class="search-text form-outline">
+        <input
+          type="search"
+          id="form1"
+          style={{ width: "500px" }}
+          class="form-control rounded-4"
+          placeholder="&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Search for any thing"
+          aria-label="Search"
+        />
+        <img
+          class="search-icon"
+          id="search_photo"
+          src="images/icon-search.png"
+          alt=""
+        />
+      </div>
+      <span>Udemy Business</span>
+      <span>Teach on Udemy</span>
+      <span>My learning</span>
+      <img
+        style={{marginRight: "20px" , height: "30px"}}
+        class="ptr"
+        src="images/icon-cart.jpg"
+        alt=""
+      />
+      <div class="login-icon ptr">
+        <pa>Log in</pa>
+      </div>
+      <div class="signup-icon ptr">
+        <pa>Sign up</pa>
+      </div>
+      <img
+        class="ptr"
+        style={{height: "30px" , marginRight: "10px"}}
+        src="images/icon-language.jpg"
+        alt=""
+      />
+    </nav>
   );
 }
 

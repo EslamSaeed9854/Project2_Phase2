@@ -53,3 +53,189 @@
 .ph:hover{
   cursor: pointer;
 }
+.porp:hover{
+  color: #5624d0;
+  cursor: pointer;
+}
+.bigscreen {
+  display: inline;
+}
+.smallscreen {
+  display: none;
+}
+.main-bar {
+  display: flex;
+  height: 70px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.div-search {
+  position: relative;
+  display: flex;
+}
+.search-box {
+  height: 50px;
+  width: 500px;
+  border-radius: 30px;
+  padding-left: 40px;
+  background-color: aliceblue;
+}
+.search-icon {
+  position: absolute;
+  left: 7px;
+  top: 10px;
+  width: 25px;
+  height: 50px;
+  height: 15px;
+  margin-right: 10px;
+}
+.search-text{
+  position: relative;
+}
+.search-icon:hover {
+  cursor: pointer;
+}
+.login-icon {
+   border: 2px solid #000;
+   padding: 5px 10px;
+}
+.signup-icon {
+  background-color: black;
+  color: white;
+  padding: 7px 12px;
+  border-radius: 3px;
+}
+.small-screen {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  position: relative;
+}
+/* small screen */
+@media (max-width: 800px) {
+  .bigscreen {
+    display: none;
+  }
+  .smallscreen {
+    display: inline;
+  }
+}
+.alarm-part {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: rgb(247, 247, 247);
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 0px;
+  padding-bottom: 30px;
+}
+.alarm-part-small {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(247, 247, 247);
+}
+.text-alarm {
+  box-shadow: 2px 2px rgb(205, 199, 199);
+  margin-top: 50px;
+  margin-left: 70px;
+  width: 300px;
+  padding-left:3px ;
+  height: 150px;
+  margin-right: 200px;
+  background-color: white;
+}
+.text-alarm-small {
+  margin-top: 20px;
+  margin-left: -11px;
+  width: 300px;
+  background-color: white;
+}
+.button-style {
+  border-style: none;
+  color: rgb(205, 199, 199);
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  margin-right: 10px;
+}
+.button-style:hover{
+  cursor: pointer;
+  color:#000;
+}
+.Courses-div{
+  height: auto;
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+ 
+}
+.expore-pyth{
+  border-style: groove;
+  border-color: black;
+  background-color: white;
+  margin: 2em;
+  padding: 0.5em;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.expore-pyth:hover {
+  cursor: pointer;
+  background-color: rgb(205, 199, 199);
+}
+.Courses-photos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.Courses-photos :hover{
+  cursor: pointer;
+}
+.Courses-photos div {
+  flex: 1 0 18%;
+}
+.one-course {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+.checked {
+  color: orange;
+}
+.ptr{
+  cursor: pointer;
+}
+.active{
+  color:black
+}
+.par{
+  position: relative;
+}
+.slider-b-l{
+  position: absolute;
+  top :17%;
+  left: -0%;
+  z-index: 9999;
+  border-radius: 50%;
+}
+.slider-b-r{
+  position: absolute;
+  right: -0%;
+  top :17%;
+  z-index: 9999;
+  border-radius: 50%; 
+}
+.two_screens{
+   margin: 110px;
+   margin-top: 20px;
+}
