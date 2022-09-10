@@ -21,11 +21,13 @@ function CourseContentItem(props) {
       <p class="mb-0 w-100">
         <a
           class="btn border w-100 "
+          data-bs-toggle="dropdown"
           href={mhref}
           role="button"
-
+          aria-expanded="false"
+          aria-controls="collapseExample"
           style={{ height: "50px", backgroundColor: "rgb(209, 215, 220)" }}
-          onClick={do_it}
+          onClick = {do_it}
         >
           {props.name}
         </a>
