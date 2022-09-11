@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 function Footer() {
     let route = useNavigate();
   return (
-    <div class=" mt-5 pb-5" style={{ backgroundColor: "#1c1d1f" }}>
+    <div class="footer mt-5 pb-5" style={{ backgroundColor: "#1c1d1f" }}>
       <div className="row ms-2 align-items-center justify-content-between">
         <th class="col-6 mt-3 text-white ms-4" style={{ fontSize: "18px" }}>
           {" "}

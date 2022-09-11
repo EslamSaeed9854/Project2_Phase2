@@ -1,32 +1,8 @@
 import React from "react";
 import { ArrowsExpand } from "react-bootstrap-icons";
 import CourseContentItem from "../Python_Folder/CourseContentItem";
-//import data from "../all_Data/course_contente_data";
-import {useState,useEffect} from 'react';
-function CourseContent() {
-  const [data,setData]=useState([]);
-  const getData=()=>{
-    fetch('https://api.npoint.io/67f136a92e7213c30ada'
-    ,{
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
-    }
-    )
-      .then(function(response){
-        console.log(response)
-        return response.json();
-      })
-      .then(function(myJson) {
-        console.log(myJson);
-        setData(myJson)
-      });
-  }
-  useEffect(()=>{
-    getData()
-  },[])
- 
+function CourseContent(props) {
+ let data = props.content_data;
   let expnd = "Expand all sections";
   let collps = "Collapse all sections";
   let cur_mood = expnd;

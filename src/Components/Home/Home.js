@@ -1,9 +1,8 @@
 import Courses from "../Home/Courses";
-import data_python from '../Python_Folder/python_res.js'
-function App() {
+function Home( props) {
   return(
-      <Courses data = {data_python}/>
+      <Courses data = {props.python_courses_data}/>
   );
 }
 
-export default App;
+export default Home;

@@ -1,29 +1,8 @@
 import React from "react";
 import Person from "../Python_Folder/Person";
-import {useState,useEffect} from 'react';
-function Instructors() {
-  const [data,setData]=useState([]);
-  const getData=()=>{
-    fetch('https://api.npoint.io/d4dec729443bf640622f'
-    ,{
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
-    }
-    )
-      .then(function(response){
-        console.log(response)
-        return response.json();
-      })
-      .then(function(myJson) {
-        console.log(myJson);
-        setData(myJson)
-      });
-  }
-  useEffect(()=>{
-    getData()
-  },[])
+
+function Instructors(props) {
+  let data = props.instructors_data;
   return (
     <div>
       <th class="col-7" style={{ fontSize: "28px" }}>
