@@ -28,6 +28,11 @@ function Navbar() {
         />
         <img
           class="search-icon"
+          onClick={()=>{
+            let uri = document.getElementById("form1").value;
+            console.log("content = " + uri);
+            route(uri);
+          }}
           id="search_photo"
           src="../images/icon-search.png"
           alt=""

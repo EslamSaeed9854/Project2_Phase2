@@ -5,17 +5,29 @@ import Button from "../Home/Button";
 function Courses(props) {
   let i = 0;
   return (
-    <div >
-      <Text/>
-      <Button/>
+    <div>
+      <Text />
+      <Button />
       <div class="Mat justify-content-between">
-      <CourseItem data={props.data} ID={i++} />
-      <CourseItem data={props.data} ID={i++} />
-      <CourseItem data={props.data} ID={i++} />
-      <CourseItem data={props.data} ID={i++} />
-      <CourseItem data={props.data} ID={i++} />
+        {props.data_python.courses?.map((cur_item) => {
+          return <CourseItem data={cur_item} ID={i++} />;
+        })}
+        {props.aws_data.courses?.map((cur_item) => {
+          return <CourseItem data={cur_item} ID={i++} />;
+        })}
+        {props.data_science_data.courses?.map((cur_item) => {
+          return <CourseItem data={cur_item} ID={i++} />;
+        })}
+        {props.draw_data.courses?.map((cur_item) => {
+          return <CourseItem data={cur_item} ID={i++} />;
+        })}
+        {props.excel_data.courses?.map((cur_item) => {
+          return <CourseItem data={cur_item} ID={i++} />;
+        })}
+        {props.web_data.courses?.map((cur_item) => {
+          return <CourseItem data={cur_item} ID={i++} />;
+        })}
       </div>
-     
     </div>
   );
 }

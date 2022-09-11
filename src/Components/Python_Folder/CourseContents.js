@@ -55,8 +55,6 @@ function CourseContent(props) {
           </button>
         </div>
       </div>
-      {console.log("=========")}
-      {console.log(data)}
       {data.map((cur_course) => {
         return (
           <CourseContentItem
