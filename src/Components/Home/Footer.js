@@ -1,4 +1,6 @@
+import { useNavigate } from "react-router-dom";
 function Footer() {
+    let route = useNavigate();
   return (
     <div class=" mt-5 pb-5" style={{ backgroundColor: "#1c1d1f" }}>
       <div className="row ms-2 align-items-center justify-content-between">
@@ -92,6 +94,8 @@ function Footer() {
           width="150"
           height="40"
           class="d-inline-block align-text-top ms-3 mt-5"
+          onClick={ ()=>{ route("/Home");}}
+          role="button"
         />
         <div class="text-white" style={{ textIndent: "85%" }}>
           © 2022 Udemy, Inc.
