@@ -1,4 +1,4 @@
-import Courses from "../Python_Folder/Courses";
+import Courses from "../Home/Courses";
 import data_python from '../Python_Folder/python_res.js'
 function App() {
   return(

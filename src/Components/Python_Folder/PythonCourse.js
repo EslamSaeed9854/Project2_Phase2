@@ -24,7 +24,7 @@ function PythonCourse() {
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-4 d-none d-xl-block">
           <CourseCard image ="https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg" />
         </div>
       </div>
