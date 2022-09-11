@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import PythonCourse from "./Python_Folder/PythonCourse";
 import Navbar from "./Home/Navbar";
 import Footer from "./Home/Footer";
+import Test from "./Home/Test";
 import { useState, useEffect } from "react";
 function App() {
   function Get_data(uri) {
@@ -16,11 +17,9 @@ function App() {
         },
       })
         .then(function (response) {
-          console.log(response);
           return response.json();
         })
         .then(function (myJson) {
-          console.log(myJson);
           setData(myJson);
         });
     };
@@ -71,6 +70,7 @@ function App() {
         ></Route>
       </Routes>
       <Footer />
+      <Test/>
     </div>
   );
 }
