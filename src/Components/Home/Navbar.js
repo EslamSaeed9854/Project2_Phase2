@@ -29,7 +29,7 @@ function Navbar() {
         <img
           class="search-icon"
           id="search_photo"
-          src="images/icon-search.png"
+          src="../images/icon-search.png"
           alt=""
         />
       </div>

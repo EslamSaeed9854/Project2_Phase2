@@ -90,8 +90,8 @@ function Footer() {
           src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg"
           alt="Logo"
           width="150"
-          height="30"
-          class="d-inline-block align-text-top ms-2 mt-3"
+          height="40"
+          class="d-inline-block align-text-top ms-3 mt-5"
         />
         <div class="text-white" style={{ textIndent: "85%" }}>
           © 2022 Udemy, Inc.
