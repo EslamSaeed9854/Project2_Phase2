@@ -1,0 +1,11 @@
+.courseHeader {
+    background-color: darkslategrey;
+    color: white;
+    padding: 20px 20px 20px 13em;
+  }
+  
+  .otherData {
+    display: flex;
+    justify-content: space-between;
+    width: 30em;
+  }

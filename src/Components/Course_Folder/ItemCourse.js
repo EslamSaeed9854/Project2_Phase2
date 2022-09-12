@@ -5,7 +5,7 @@ import OverView from "../Course_Folder/OverView";
 import Requirements from "../Course_Folder/Requirements";
 import Instructors from "../Course_Folder/Instructors";
 import Ratings from "../Course_Folder/Ratings";
-import CourseDescription from "../Home/CourseDescription";
+import CourseDescription from "../Course_Folder/CourseDescription";
 import CourseCard from "../Course_Folder/CourseCard";
 function PythonCourse(props) {
   return (
