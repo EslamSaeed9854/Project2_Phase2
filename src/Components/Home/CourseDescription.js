@@ -7,7 +7,7 @@ function CourseDescription({ courseData }) {
       <div>
         { "Development" + " > " + "Programming Languages" + " > " + "Python"}
       </div>
-      <h2>Learn Python: The Complete Python Programming Course</h2>
+      <h2>{ localStorage.CourseTitle}</h2>
       <p>{courseData.headline}</p>
       <div className="otherData">
         <div>{courseData.rating}</div>

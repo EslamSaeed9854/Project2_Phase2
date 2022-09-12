@@ -1,12 +1,12 @@
 import React from "react";
-import CourseContent from "../Python_Folder/CourseContents";
+import CourseContent from "../Course_Folder/CourseContents";
 import Description from "../Home/Description";
-import OverView from "../Python_Folder/OverView";
-import Requirements from "../Python_Folder/Requirements";
-import Instructors from "../Python_Folder/Instructors";
-import Ratings from "../Python_Folder/Ratings";
+import OverView from "../Course_Folder/OverView";
+import Requirements from "../Course_Folder/Requirements";
+import Instructors from "../Course_Folder/Instructors";
+import Ratings from "../Course_Folder/Ratings";
 import CourseDescription from "../Home/CourseDescription";
-import CourseCard from "../Python_Folder/CourseCard";
+import CourseCard from "../Course_Folder/CourseCard";
 function PythonCourse(props) {
   return (
     <div>

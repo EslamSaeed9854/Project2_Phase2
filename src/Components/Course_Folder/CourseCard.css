@@ -1,7 +1,7 @@
 .courseCard {
     position: sticky;
     background-color: white;
-    top: 100px;
+    top: 0px;
     right: 1em;
     z-index: 10;
     width: 350px;

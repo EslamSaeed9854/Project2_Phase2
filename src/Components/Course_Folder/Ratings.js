@@ -1,5 +1,5 @@
 import React from "react";
-import Rate_Item from "../Python_Folder/Rate_Item";
+import Rate_Item from "../Course_Folder/Rate_Item";
 
 function Ratings(props) {
   let data = props.rate_data;

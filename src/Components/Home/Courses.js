@@ -1,4 +1,4 @@
-import CourseItem from "../Python_Folder/CourseItem";
+import CourseItem from "../Home/CourseItem";
 import "../style.css";
 import Text from "../Home/Text";
 import Button from "../Home/Button";

@@ -11,7 +11,7 @@ import "./CourseCard.css";
 function CourseCard(courseCardData) {
   return (
     <div className="courseCard">
-      <img src={courseCardData.image} alt="course" className="courseCardImg" />
+      <img src={localStorage.CourseImg} alt="course" className="courseCardImg" />
       <div className="courseCardBody">
         <h3>E£{courseCardData.price}</h3>
         <button className="addCartBtn">Add to cart</button>

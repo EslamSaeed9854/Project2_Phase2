@@ -1,5 +1,5 @@
 import React from "react";
-import Person from "../Python_Folder/Person";
+import Person from "../Course_Folder/Person";
 
 function Instructors(props) {
   let data = props.instructors_data;
