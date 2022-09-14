@@ -64,6 +64,19 @@ function App() {
             />
           }
         ></Route>
+        <Route
+          path="/"
+          element={
+            <Home
+              python_courses_data={python_courses_data}
+              aws_data={aws_data}
+              data_science_data={data_science_data}
+              draw_data={draw_data}
+              excel_data={excel_data}
+              web_data={web_data}
+            />
+          }
+        ></Route>
       </Routes>
       <Footer />
       <Test/>
