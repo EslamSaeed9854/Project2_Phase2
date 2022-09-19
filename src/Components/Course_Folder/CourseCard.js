@@ -11,9 +11,17 @@ import "./CourseCard.css";
 function CourseCard(courseCardData) {
   return (
     <div className="courseCard">
-      <img src={localStorage.CourseImg} alt="course" className="courseCardImg" />
+      <img
+        src={localStorage.CourseImg}
+        alt="course"
+        className="courseCardImg"
+      />
       <div className="courseCardBody">
-        <h3>E£{courseCardData.price}</h3>
+        <div class = "row">
+        <h5 class="col-4">E£ 179.99 </h5>
+        <span style = {{ borderBottom: "none"}}class ="col-8">E£ 529.99 Discount66% off</span>
+        </div>
+       
         <button className="addCartBtn">Add to cart</button>
         <button>Buy now</button>
         <div className="d-flex justify-content-center">

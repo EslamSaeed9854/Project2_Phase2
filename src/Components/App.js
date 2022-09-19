@@ -5,18 +5,22 @@ import CourseItem from "./Course_Folder/ItemCourse";
 import Navbar from "./Home/Navbar";
 import Footer from "./Home/Footer";
 import Test from "./Home/Test";
+import Spinner from "./Home/Spinner";
 import { useState, useEffect } from "react";
 function App() {
-  function Get_data(uri) {
+  function Get_data(url) {
+    const [isLoading, setIsLoading] = useState(false);
     const [data, setData] = useState([]);
     const getData = () => {
-      fetch(uri, {
+      setIsLoading(true);
+      fetch(url, {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
       })
         .then(function (response) {
+          setIsLoading(false);
           return response.json();
         })
         .then(function (myJson) {
@@ -35,8 +39,12 @@ function App() {
   let excel_data = Get_data("https://api.npoint.io/1aeb4646e34d61ba62df");
   let content_data = Get_data("https://api.npoint.io/67f136a92e7213c30ada");
   let instructors_data = Get_data("https://api.npoint.io/d4dec729443bf640622f");
-  let data_science_data = Get_data("https://api.npoint.io/808be90a6d05ba845202");
-  let python_courses_data = Get_data("https://api.npoint.io/84d5eeaa1586eef2e57b");
+  let data_science_data = Get_data(
+    "https://api.npoint.io/808be90a6d05ba845202"
+  );
+  let python_courses_data = Get_data(
+    "https://api.npoint.io/84d5eeaa1586eef2e57b"
+  );
   return (
     <div>
       <Navbar />
@@ -79,7 +87,7 @@ function App() {
         ></Route>
       </Routes>
       <Footer />
-      <Test/>
+      <Test />
     </div>
   );
 }

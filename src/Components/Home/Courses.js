@@ -2,31 +2,36 @@ import CourseItem from "../Home/CourseItem";
 import "../style.css";
 import Text from "../Home/Text";
 import Button from "../Home/Button";
+import Spinner from "../Home/Spinner";
+import CoursesItems from "../Home/CoursesItems";
 function Courses(props) {
-  let i = 0;
+  function Check() {
+    return props.web_data.courses == undefined ||
+      props.excel_data.courses == undefined ||
+      props.draw_data.courses == undefined ||
+      props.data_science_data.courses == undefined ||
+      props.data_python.courses == undefined ||
+      props.aws_data.courses == undefined
+      ? 0
+      : 1;
+  }
   return (
     <div>
       <Text />
       <Button />
-      <div class="Mat  justify-content-center">
-        {props.data_python.courses?.map((cur_item) => {
-          return cur_item.title.toLowerCase().indexOf(localStorage.srch.toLowerCase()) > -1 ? <CourseItem data={cur_item} ID={i++} />:<i></i>;
-        })}
-        {props.aws_data.courses?.map((cur_item) => {
-          return cur_item.title.toLowerCase().indexOf(localStorage.srch.toLowerCase()) > -1 ? <CourseItem data={cur_item} ID={i++} />:<i></i>;
-        })}
-        {props.data_science_data.courses?.map((cur_item) => {
-           return cur_item.title.toLowerCase().indexOf(localStorage.srch.toLowerCase()) > -1 ? <CourseItem data={cur_item} ID={i++} />:<i></i>;
-        })}
-        {props.draw_data.courses?.map((cur_item) => {
-          return cur_item.title.toLowerCase().indexOf(localStorage.srch.toLowerCase()) > -1 ? <CourseItem data={cur_item} ID={i++} />:<i></i>;
-        })}
-        {props.excel_data.courses?.map((cur_item) => {
-          return cur_item.title.toLowerCase().indexOf(localStorage.srch.toLowerCase()) > -1 ? <CourseItem data={cur_item} ID={i++} />:<i></i>;
-        })}
-        {props.web_data.courses?.map((cur_item) => {
-           return cur_item.title.toLowerCase().indexOf(localStorage.srch.toLowerCase()) > -1 ? <CourseItem data={cur_item} ID={i++} />:<i></i>;
-        })}
+      <div class="Mat m-2  justify-content-center">
+        {Check() ? (
+          <CoursesItems
+            data_python={props.data_python}
+            aws_data={props.aws_data}
+            data_science_data={props.data_science_data}
+            draw_data={props.draw_data}
+            excel_data={props.excel_data}
+            web_data={props.web_data}
+          />
+        ) : (
+          <Spinner />
+        )}
       </div>
     </div>
   );

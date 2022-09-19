@@ -2,10 +2,10 @@
     position: sticky;
     background-color: white;
     top: 0px;
-    right: 1em;
     z-index: 10;
     width: 350px;
     padding: 2px;
+    margin-top: -250px;
     border: solid;
   }
   

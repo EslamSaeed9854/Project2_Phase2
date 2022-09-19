@@ -9,11 +9,12 @@ import CourseDescription from "../Course_Folder/CourseDescription";
 import CourseCard from "../Course_Folder/CourseCard";
 function PythonCourse(props) {
   return (
-    <div>
+    <div >
       {" "}
       <CourseDescription courseData={{}} />{" "}
       <div class="row">
-        <div class="col-7 ms-2">
+        <div class="col-1"></div>
+        <div class="col-7 ms-2 me-4">
           <div class="container mt-5 mb-5" style={{ width: "800px" }}>
             <OverView />
             <CourseContent content_data = {props.content_data}/>
@@ -24,8 +25,8 @@ function PythonCourse(props) {
           </div>
         </div>
 
-        <div class="col-4 d-none d-xl-block">
-          <CourseCard image ="https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg" />
+        <div class="col-2 d-none d-xl-block">
+          <CourseCard/>
         </div>
       </div>
     </div>

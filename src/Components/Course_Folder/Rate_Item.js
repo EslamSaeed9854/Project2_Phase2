@@ -3,7 +3,7 @@ import React from "react";
 function Rate_Item(props) {
   return (
     <div className="col-6">
-        <p>________________________________________________________</p>
+        <hr></hr>
       <div class="row">
         <div
           class="badge bg-black rounded-circle"

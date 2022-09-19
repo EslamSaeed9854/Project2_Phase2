@@ -41,8 +41,7 @@ function Footer() {
           alt="===="
         ></img>
       </div>
-      <div className="mb-3" style={{ color : "darkgray" }}>
-        ___________________________________________________________________________________________________________________________________________________________________________________________________________</div>
+      <hr style = {{color : "white"}}></hr>
       <div className="row text-white" style={{ marginLeft: "30px" }}>
         <div class="col-7">
           <div class="row mb-2">
